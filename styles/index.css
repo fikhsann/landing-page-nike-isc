@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  margin: 1rem 3rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  border-top: 0.5px solid rgb(187, 187, 187);
+}
+
+.footerMainContent {
+  margin-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLeftSide {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLeftSide .resource,
+.footerLeftSide .help,
+.footerLeftSide .company {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resource h1,
+.help h1,
+.company h1 {
+  font-size: 15px;
+}
+
+.resource ul,
+.help ul,
+.company ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  list-style: none;
+}
+
+ul li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footerRightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.location {
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.location p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.location img {
+  fill: gray;
+  width: 13px;
+}
+
+.footerBottomSide {
+  display: flex;
+  gap: 1rem;
+  color: gray;
+  font-size: 15px;
+}
+
+.footerBottomSide p:nth-child(1n + 2):hover {
+  color: black;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
