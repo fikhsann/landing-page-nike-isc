@@ -343,13 +343,16 @@ input:hover {
   background-color: #c2bdbd;
 }
 
-.container-shopByIcons {
+.container-shopByIcons,
+.container-giftsForMom {
   background-color: #fff;
   padding: 20px;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
-.header-shopByIcons {
+.header-shopByIcons,
+.header-giftsForMom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,6 +367,7 @@ input:hover {
 
 .controls {
   display: flex;
+  align-items: center;
 }
 
 .controls button {
@@ -421,6 +425,55 @@ input:hover {
 }
 
 .indicator {
+  background-color: #ddd;
+  height: 5px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 200px; /* Sesuaikan lebar indikator */
+}
+
+/* Slider Gifts For Mom */
+
+.shop {
+  font-weight: bold;
+}
+
+.sliderGiftsForMom {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slideGiftsForMom {
+  flex: 0 0 auto;
+  width: 450px; /* Sesuaikan lebar slide */
+  margin-right: 15px;
+}
+
+.description-product {
+  color: gray;
+  font-weight: normal;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.slideGiftsForMom:last-child {
+  margin-right: 0;
+}
+
+.slideGiftsForMom img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.slide-description {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+.indicatorGiftsForMom {
   background-color: #ddd;
   height: 5px;
   border-radius: 3px;

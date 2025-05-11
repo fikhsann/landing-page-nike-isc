@@ -35,7 +35,7 @@ function updateSlider() {
   slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-function goToPrevSlide() {
+function goToPrevSlideShopByIcons() {
   if (currentIndex > 0) {
     currentIndex--;
     updateSlider();
@@ -43,7 +43,7 @@ function goToPrevSlide() {
   }
 }
 
-function goToNextSlide() {
+function goToNextSlideShopByIcons() {
   if (currentIndex < slides.length - 1) {
     currentIndex++;
     updateSlider();
@@ -51,13 +51,57 @@ function goToNextSlide() {
   }
 }
 
-function updateIndicator() {
+function updateIndicatorShopByIcons() {
   const progress = ((currentIndex + 1) / slides.length) * 100;
   indicator.style.width = `${progress}%`;
 }
 
-prevBtn.addEventListener("click", goToPrevSlide);
-nextBtn.addEventListener("click", goToNextSlide);
+prevBtn.addEventListener("click", goToPrevSlideShopByIcons);
+nextBtn.addEventListener("click", goToNextSlideShopByIcons);
 
 // Inisialisasi indikator
-updateIndicator();
+updateIndicatorShopByIcons();
+
+// Slider GiftsForMom
+const sliderGiftsForMom = document.querySelector(".sliderGiftsForMom");
+const slidesGiftsForMom = document.querySelectorAll(".slideGiftsForMom");
+const prevBtnGiftsForMom = document.querySelector(".prev-btnGiftsForMom");
+const nextBtnGiftsForMom = document.querySelector(".next-btnGiftsForMom");
+const indicatorGiftsForMom = document.querySelector(".indicatorGiftsForMom");
+
+let currentIndexGiftsForMom = 0;
+const slideWidthGiftsForMom = slidesGiftsForMom[0].offsetWidth + 15; // Lebar slide + margin
+
+function updateSliderGiftsForMom() {
+  sliderGiftsForMom.style.transform = `translateX(-${
+    currentIndexGiftsForMom * slideWidthGiftsForMom
+  }px)`;
+}
+
+function goToPrevSlideGiftsForMom() {
+  if (currentIndexGiftsForMom > 0) {
+    currentIndexGiftsForMom--;
+    updateSliderGiftsForMom();
+    updateIndicatorGiftsForMom();
+  }
+}
+
+function goToNextSlideGiftsForMom() {
+  if (currentIndexGiftsForMom < slidesGiftsForMom.length - 1) {
+    currentIndexGiftsForMom++;
+    updateSliderGiftsForMom();
+    updateIndicatorGiftsForMom();
+  }
+}
+
+function updateIndicatorGiftsForMom() {
+  const progress =
+    ((currentIndexGiftsForMom + 1) / slidesGiftsForMom.length) * 100;
+  indicatorGiftsForMom.style.width = `${progress}%`;
+}
+
+prevBtnGiftsForMom.addEventListener("click", goToPrevSlideGiftsForMom);
+nextBtnGiftsForMom.addEventListener("click", goToNextSlideGiftsForMom);
+
+// Inisialisasi indikator
+updateIndicatorGiftsForMom();
