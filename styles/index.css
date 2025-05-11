@@ -268,7 +268,7 @@ input:hover {
 .hero .hero-title{
   font-family: lato;
   font-size: 23px;
-  padding: 0px 30px;
+  padding: 15px 30px;
 }
 .card-container {
   display: grid;
