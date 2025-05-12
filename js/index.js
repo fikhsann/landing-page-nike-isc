@@ -105,3 +105,47 @@ nextBtnGiftsForMom.addEventListener("click", goToNextSlideGiftsForMom);
 
 // Inisialisasi indikator
 updateIndicatorGiftsForMom();
+
+// Js ShopBySports Start
+const slidershopBySports = document.querySelector(".slidershopBySports");
+const slidesshopBySports = document.querySelectorAll(".slideshopBySports");
+const prevBtnshopBySports = document.querySelector(".prev-btnshopBySports");
+const nextBtnshopBySports = document.querySelector(".next-btnshopBySports");
+const indicatorshopBySports = document.querySelector(".indicatorshopBySports");
+
+let currentIndexshopBySports = 0;
+const slideWidthshopBySports = slidesshopBySports[0].offsetWidth + 15; // Lebar slide + margin
+
+function updateSlidershopBySports() {
+  slidershopBySports.style.transform = `translateX(-${
+    currentIndexshopBySports * slideWidthshopBySports
+  }px)`;
+}
+
+function goToPrevSlideshopBySports() {
+  if (currentIndexshopBySports > 0) {
+    currentIndexshopBySports--;
+    updateSlidershopBySports();
+    updateIndicatorshopBySports();
+  }
+}
+
+function goToNextSlideshopBySports() {
+  if (currentIndexshopBySports < slidesshopBySports.length - 1) {
+    currentIndexshopBySports++;
+    updateSlidershopBySports();
+    updateIndicatorshopBySports();
+  }
+}
+
+function updateIndicatorshopBySports() {
+  const progress =
+    ((currentIndexshopBySports + 1) / slidesshopBySports.length) * 100;
+  indicatorshopBySports.style.width = `${progress}%`;
+}
+
+prevBtnshopBySports.addEventListener("click", goToPrevSlideshopBySports);
+nextBtnshopBySports.addEventListener("click", goToNextSlideshopBySports);
+
+// Inisialisasi indikator
+updateIndicatorshopBySports();
