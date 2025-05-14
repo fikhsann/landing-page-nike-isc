@@ -212,19 +212,19 @@ input:hover {
   pointer-events: none;
 }
 
-.bottom-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 17px 30px;
-  background-color: #ebe7e7f3;
+.bottom-bar{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 17px 30px;
+    background-color: #ebe7e7f3;
 }
-.bottom-bar span {
+.bottom-bar span{
   font-weight: 300;
 }
-.bottom-bar a {
+.bottom-bar a{
   font-family: lato;
   font-weight: 800;
   font-size: 12px;
@@ -300,12 +300,12 @@ input:hover {
   margin-bottom: 30px;
 }
 .image-container img {
-  width: 750px;
+  width: 610px;
   height: auto;
   border-radius: 0px;
 }
-.image-container .promo-3 {
-  width: 100%;
+.image-container .promo-3{
+  width: 1218px;
   height: auto;
 }
 .headline {
@@ -314,14 +314,14 @@ input:hover {
   margin-top: 20px;
   letter-spacing: 1px;
 }
-.promo-section p {
+.promo-section p{
   font-weight: 600;
   font-family: lato;
 }
-.promo-buttons {
+.promo-buttons{
   margin-top: 30px;
 }
-.promo-buttons .shop-now {
+.promo-buttons .shop-now{
   background-color: #000;
   color: white;
   font-weight: 700;
@@ -332,23 +332,18 @@ input:hover {
   border-radius: 50px;
   cursor: pointer;
 }
-.promo-buttons button:hover {
+.promo-buttons button:hover{
   background-color: #c2bdbd;
 }
-.promo {
+.promo{
   text-align: left;
   padding: 20px 30px;
   margin: 20px 0px;
 }
-
-.promo .shop-by {
-  margin-bottom: 1rem;
-}
-
-.promo p {
+.promo p{
   padding-bottom: 10px;
 }
-.promo-content {
+.promo-content{
   text-align: center;
 }
 
@@ -359,8 +354,7 @@ input:hover {
 
 .subheading {
   font-size: 16px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
   color: #000;
 }
 
@@ -394,6 +388,7 @@ input:hover {
   background-color: #333;
 }
 
+
 .hero {
   width: 100%;
   margin-bottom: 4rem;
@@ -415,7 +410,7 @@ input:hover {
 .card {
   position: relative;
   justify-content: center;
-  width: 485px;
+  width: 400px;
   height: 550px;
 }
 
