@@ -22,6 +22,3 @@ Landing Page ini adalah hasil *rebuild* desain official Nike untuk keperluan lat
 - CSS
 - JavaScript (DOM & interaksi dasar)
 
-## 🔧 Cara Menjalankan Proyek
-
-### 1. Clone Repo
